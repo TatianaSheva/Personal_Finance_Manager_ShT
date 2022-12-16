@@ -1,6 +1,5 @@
 import org.json.simple.JSONObject;
 
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,8 +37,6 @@ public class CountingMaxCategories {
         }
 
         //Находим категорию с максимальной суммой
-        //Map.Entry<String, Integer> result = sum.entrySet().stream().max(Comparator.comparing(Map.Entry::getValue)).orElse(null);
-
         int maxSum = 0;
         String key = null;
         for (Map.Entry<String, Integer> entryMap : sum.entrySet()) {

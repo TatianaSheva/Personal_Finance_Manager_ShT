@@ -22,7 +22,7 @@ public class Client {
             Purchase purchase = new Purchase("сухарики", "2022.09.30", 150);
 
 
-            // Перевод объект в json-формат
+            // Перевод объекта в json-формат
             Gson gson = new Gson();
             String purchaseToJson = gson.toJson(purchase);
 
